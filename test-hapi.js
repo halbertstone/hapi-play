@@ -21,8 +21,8 @@ server.route({
 //Route added through Branch Bra-A
 server.route({
   method: 'GET',
-  path: '/{token-reflect}',
+  path: '/{token}',
   handler: function (request, reply) {
-    reply('\n\nHello, ' + encodeURIComponent(request.params.token-reflect) + '!\n\n');
+    reply('\n\nHello, ' + encodeURIComponent(request.params.token) + '!\n\n');
   }
 });
