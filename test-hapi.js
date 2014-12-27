@@ -23,6 +23,6 @@ server.route({
   method: 'GET',
   path: '/{token-reflect}',
   handler: function (request, reply) {
-    reply('\n\nHello, ' + encodeURIComponent(request.params.tokent-reflect) + '!\n\n');
+    reply('\n\nHello, ' + encodeURIComponent(request.params.token-reflect) + '!\n\n');
   }
 });
