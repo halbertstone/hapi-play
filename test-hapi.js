@@ -17,3 +17,11 @@ server.route({
     reply('\nHello World!\ntest-hapi is alive!\n');
   }
 });
+
+Server.route({
+  method: 'GET',
+  path: '/dude/',
+  handler: function (request, reply){
+    reply('\nWelcome, DUDE!\n');
+  }
+});
