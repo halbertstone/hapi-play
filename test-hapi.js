@@ -17,3 +17,11 @@ server.route({
     reply('\nHello World!\ntest-hapi is alive!\n');
   }
 });
+
+server.route({
+  method: 'GET',
+  path: '/{token-reflect}',
+  handler: function (request, reply) {
+    reply('\n\nHello, ' + encodeURIComponent(request.params.tokent-reflect) + '!\n\n');
+  }
+});
