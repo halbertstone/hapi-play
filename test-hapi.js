@@ -18,7 +18,7 @@ server.route({
   }
 });
 
-Server.route({
+server.route({
   method: 'GET',
   path: '/dude/',
   handler: function (request, reply){
