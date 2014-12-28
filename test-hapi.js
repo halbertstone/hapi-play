@@ -26,3 +26,12 @@ server.route({
     reply('\nWelcome, DUDE!\n');
   }
 });
+     
+//Route added through Branch Bra-A
+server.route({
+  method: 'GET',
+  path: '/{token}',
+  handler: function (request, reply) {
+    reply('\n\nHello, ' + encodeURIComponent(request.params.token) + '!\n\n');
+  }
+});
